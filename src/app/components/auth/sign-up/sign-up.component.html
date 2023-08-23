@@ -1,0 +1,23 @@
+<form (ngSubmit)="signUp()" [formGroup]="loginForm">
+  <h1>sign-up works!</h1>
+  <input
+    autocomplete="email"
+    formControlName="email"
+    name="email"
+    placeholder="Enter email"
+    type="email">
+  <input
+    autocomplete="new-password"
+    formControlName="password"
+    name="password"
+    placeholder="Enter a password"
+    type="password">
+  <input
+    autocomplete="new-password"
+    formControlName="repeatPassword"
+    name="repeatPassword"
+    placeholder="Repeat the password"
+    type="password">
+  <button>Sign Up</button>
+  <a routerLink="/sign-in"> Sign In</a>
+</form>
